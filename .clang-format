@@ -1,0 +1,23 @@
+BasedOnStyle: Google
+
+# Indents
+IndentAccessModifiers: false
+AccessModifierOffset: -4
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# Alignment
+AlignConsecutiveDeclarations: true
+
+# Spacing
+SpacesInParentheses: false 
+Cpp11BracedListStyle: false
+
+# Wrapping
+AlwaysBreakAfterDefinitionReturnType: All 
+BreakBeforeBraces: Custom 
+BraceWrapping:
+  AfterFunction: true
+  AfterClass: false       
+  AfterStruct: false

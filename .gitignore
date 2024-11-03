@@ -1,0 +1,15 @@
+# Binary files
+build/
+
+# Visual studio
+.vs/
+**.sln
+**.vcxproj*
+
+# For my LSP
+compile_flags.txt
+
+# Utilities
+build.bat
+regen.bat
+run.bat
