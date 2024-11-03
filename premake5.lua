@@ -1,9 +1,22 @@
+--
+-- Include directories
+includes = {}
+includes["glad"] = "%{wks.location}/third_party/glad/include/"
+
+--
+-- Workspace
 workspace "term"
 
 architecture "x86_64"
 
 configurations { "dev", "rel" }
 
+--
+-- Third party
+include "third_party/glad"
+
+--
+-- Terminal project
 project "term"
 
 kind "consoleapp"
@@ -19,11 +32,15 @@ files {
 }
 
 includedirs {
-    "src/"
+    "src/",
+
+    "%{includes.glad}"
 }
 
 links {
+    "glad",
 
+    "opengl32.lib"
 }
 
 filter "configurations:dev"
